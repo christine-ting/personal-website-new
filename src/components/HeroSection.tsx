@@ -1,7 +1,30 @@
-
 import { Button } from "@/components/ui/button";
+import { Github, Linkedin, Twitter, Instagram } from "lucide-react";
 
 const HeroSection = () => {
+  const socialLinks = [
+    { 
+      icon: Github, 
+      href: "https://github.com/johnsmith", 
+      ariaLabel: "GitHub Profile" 
+    },
+    { 
+      icon: Linkedin, 
+      href: "https://linkedin.com/in/johnsmith", 
+      ariaLabel: "LinkedIn Profile" 
+    },
+    { 
+      icon: Twitter, 
+      href: "https://twitter.com/johnsmith", 
+      ariaLabel: "Twitter Profile" 
+    },
+    { 
+      icon: Instagram, 
+      href: "https://instagram.com/johnsmith", 
+      ariaLabel: "Instagram Profile" 
+    }
+  ];
+
   return (
     <section id="home" className="min-h-screen flex items-center pt-16 bg-gradient-to-b from-white to-sky-50">
       <div className="section-container">
@@ -18,13 +41,30 @@ const HeroSection = () => {
               A passionate <span className="text-primary font-medium">Full-Stack Developer</span>{" "}
               crafting beautiful and functional digital experiences.
             </p>
-            <div className="flex flex-col sm:flex-row gap-4">
-              <Button className="btn-primary" asChild>
-                <a href="#projects">View My Work</a>
-              </Button>
-              <Button variant="outline" className="btn-outline" asChild>
-                <a href="#contact">Contact Me</a>
-              </Button>
+            <div className="flex flex-col sm:flex-row gap-4 items-center">
+              <div className="flex space-x-4 mb-4 sm:mb-0">
+                {socialLinks.map(({ icon: Icon, href, ariaLabel }) => (
+                  <a
+                    key={href}
+                    href={href}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label={ariaLabel}
+                    className="text-navy-800 hover:text-primary transition-colors duration-300 hover:scale-110"
+                  >
+                    <Icon size={24} strokeWidth={1.5} />
+                  </a>
+                ))}
+              </div>
+              
+              <div className="flex gap-4">
+                <Button className="btn-primary" asChild>
+                  <a href="#projects">View My Work</a>
+                </Button>
+                <Button variant="outline" className="btn-outline" asChild>
+                  <a href="#contact">Contact Me</a>
+                </Button>
+              </div>
             </div>
           </div>
           <div className="relative animate-fade-in hidden md:block">
