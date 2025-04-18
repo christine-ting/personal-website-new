@@ -1,4 +1,3 @@
-
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
@@ -11,7 +10,9 @@ const ContactSection = () => {
   };
 
   return (
-    <section id="contact" className="py-20 bg-navy-50">
+    <section id="contact" className="py-20 relative bg-gradient-to-br from-navy-50/50 to-white overflow-hidden">
+      <div className="absolute inset-0 bg-[radial-gradient(circle_800px_at_50%_-100px,rgba(94,129,172,0.15),transparent)] -z-10" />
+      <div className="absolute inset-0 bg-[length:50px_50px] bg-grid-navy-900/[0.02] -z-10" />
       <div className="section-container">
         <div className="max-w-3xl mx-auto text-center mb-16">
           <h2 className="text-3xl md:text-4xl font-bold text-navy-900 mb-4">Get In Touch</h2>

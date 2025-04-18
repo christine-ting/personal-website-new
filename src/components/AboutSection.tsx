@@ -1,7 +1,8 @@
-
 const AboutSection = () => {
   return (
-    <section id="about" className="py-20 bg-white">
+    <section id="about" className="py-20 relative bg-gradient-to-br from-white to-navy-50/30 overflow-hidden">
+      <div className="absolute inset-0 bg-[radial-gradient(circle_500px_at_50%_200px,rgba(94,129,172,0.1),transparent)] -z-10" />
+      <div className="absolute inset-0 bg-[length:40px_40px] bg-grid-navy-900/[0.02] -z-10" />
       <div className="section-container">
         <div className="max-w-3xl mx-auto text-center mb-16">
           <h2 className="text-3xl md:text-4xl font-bold text-navy-900 mb-4">About Me</h2>

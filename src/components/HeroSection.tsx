@@ -26,7 +26,9 @@ const HeroSection = () => {
   ];
 
   return (
-    <section id="home" className="min-h-screen flex items-center pt-16 bg-gradient-to-b from-white to-sky-50">
+    <section id="home" className="min-h-screen flex items-center pt-16 relative overflow-hidden bg-gradient-to-br from-white via-sky-50 to-navy-50">
+      <div className="absolute inset-0 bg-grid-navy-100/[0.05] -z-10" />
+      <div className="absolute inset-0 bg-gradient-to-b from-white/50 to-transparent -z-10" />
       <div className="section-container">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
           <div className="animate-fade-up">

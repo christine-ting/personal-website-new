@@ -1,4 +1,3 @@
-
 import { Button } from "@/components/ui/button";
 
 const ProjectsSection = () => {
@@ -30,7 +29,9 @@ const ProjectsSection = () => {
   ];
 
   return (
-    <section id="projects" className="py-20 bg-white">
+    <section id="projects" className="py-20 relative bg-gradient-to-br from-white via-navy-50/10 to-white overflow-hidden">
+      <div className="absolute inset-0 bg-[radial-gradient(circle_500px_at_-100px_500px,rgba(94,129,172,0.1),transparent)] -z-10" />
+      <div className="absolute top-0 right-0 w-1/2 h-1/2 bg-[radial-gradient(circle_400px_at_100%_0%,rgba(94,129,172,0.08),transparent)] -z-10" />
       <div className="section-container">
         <div className="max-w-3xl mx-auto text-center mb-16">
           <h2 className="text-3xl md:text-4xl font-bold text-navy-900 mb-4">Featured Projects</h2>
