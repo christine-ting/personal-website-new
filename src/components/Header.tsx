@@ -37,14 +37,14 @@ const Header = () => {
           : "bg-transparent"
       )}
     >
-      <div className="max-w-7xl mx-auto flex items-center justify-end">
+      <div className="max-w-7xl mx-auto flex items-center justify-center">
         {/* Desktop navigation */}
         <nav className="hidden md:flex items-center space-x-8">
           {navLinks.map((link) => (
             <a
               key={link.name}
               href={link.href}
-              className="nav-link font-medium text-base"
+              className="nav-link font-medium text-white hover:text-white transition-colors duration-300"
             >
               {link.name}
             </a>
