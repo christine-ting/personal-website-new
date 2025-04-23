@@ -45,11 +45,11 @@ const HeroSection = () => {
             </h1>
             <div className="h-1 w-20 bg-primary mb-6"></div>
             <p className="text-lg md:text-xl mb-8 max-w-lg opacity-90">
-            Full-Stack Developer{' '}
+              Full-Stack Developer{' '}
               <span className="text-primary font-medium">
                 &
               </span>{' '}
-              Founder of
+              crafting beautiful and functional digital experiences.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 items-center">
               <div className="flex space-x-4 mb-4 sm:mb-0">
@@ -113,4 +113,4 @@ const HeroSection = () => {
   );
 };
 
-export default HeroSection;
+export default HeroSection; 

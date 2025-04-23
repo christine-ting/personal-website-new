@@ -62,18 +62,18 @@ export default {
 					border: 'hsl(var(--sidebar-border))',
 					ring: 'hsl(var(--sidebar-ring))'
 				},
-				navy: {
-					50: '#f0f2f8',
-					100: '#d9e0ef',
-					200: '#b7c3e0',
-					300: '#8a9dcf',
-					400: '#637fc0',
-					500: '#4766b1',
-					600: '#375090',
-					700: '#2c3e70',
-					800: '#253156',
-					900: '#1e2945',
-					950: '#0f1627',
+				yellow: {
+					50: '#fefce8',
+					100: '#fef9c3',
+					200: '#fef08a',
+					300: '#fde047',
+					400: '#facc15',
+					500: '#eab308',
+					600: '#ca8a04',
+					700: '#a16207',
+					800: '#e49738',
+					900: '#713f12',
+					950: '#422006',
 				},
 				highlight: '#5E81AC'
 			},
@@ -136,8 +136,8 @@ export default {
 				'slide-in-right': 'slide-in-right 0.5s ease-out',
 			},
 			fontFamily: {
-				sans: ['Inter', 'sans-serif'],
-				display: ['Playfair Display', 'serif']
+				sans: ['Roboto', 'sans-serif'],
+				display: ['Lora', 'serif']
 			}
 		}
 	},

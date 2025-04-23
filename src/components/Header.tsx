@@ -1,4 +1,3 @@
-
 import { useState, useEffect } from "react";
 import { cn } from "@/lib/utils";
 
@@ -23,7 +22,6 @@ const Header = () => {
   };
 
   const navLinks = [
-    { name: "Home", href: "#home" },
     { name: "About", href: "#about" },
     { name: "Skills", href: "#skills" },
     { name: "Projects", href: "#projects" },
@@ -39,13 +37,7 @@ const Header = () => {
           : "bg-transparent"
       )}
     >
-      <div className="max-w-7xl mx-auto flex items-center justify-between">
-        <a href="#home" className="flex items-center space-x-2">
-          <span className="text-2xl font-display font-bold text-navy-900">
-            Portfolio
-          </span>
-        </a>
-        
+      <div className="max-w-7xl mx-auto flex items-center justify-end">
         {/* Desktop navigation */}
         <nav className="hidden md:flex items-center space-x-8">
           {navLinks.map((link) => (
@@ -62,7 +54,7 @@ const Header = () => {
         {/* Mobile menu button */}
         <button
           onClick={toggleMobileMenu}
-          className="md:hidden text-navy-900 focus:outline-none"
+          className="md:hidden text-yellow-900 focus:outline-none"
           aria-label="Toggle menu"
         >
           <svg

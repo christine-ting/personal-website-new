@@ -10,21 +10,21 @@ const ContactSection = () => {
   };
 
   return (
-    <section id="contact" className="py-20 relative bg-gradient-to-br from-navy-50/50 to-white overflow-hidden">
+    <section id="contact" className="py-20 relative bg-gradient-to-br from-yellow-50/50 to-white overflow-hidden">
       <div className="absolute inset-0 bg-[radial-gradient(circle_800px_at_50%_-100px,rgba(94,129,172,0.15),transparent)] -z-10" />
-      <div className="absolute inset-0 bg-[length:50px_50px] bg-grid-navy-900/[0.02] -z-10" />
+      <div className="absolute inset-0 bg-[length:50px_50px] bg-grid-yellow-900/[0.02] -z-10" />
       <div className="section-container">
         <div className="max-w-3xl mx-auto text-center mb-16">
-          <h2 className="text-3xl md:text-4xl font-bold text-navy-900 mb-4">Get In Touch</h2>
+          <h2 className="text-3xl md:text-4xl font-bold text-yellow-900 mb-4">Get In Touch</h2>
           <div className="h-1 w-16 bg-primary mx-auto mb-8"></div>
-          <p className="text-navy-700">
+          <p className="text-yellow-700">
             Have a project in mind or just want to say hello? Feel free to reach out!
           </p>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
           <div className="animate-fade-up">
-            <h3 className="text-2xl font-bold text-navy-900 mb-6">Contact Information</h3>
+            <h3 className="text-2xl font-bold text-yellow-900 mb-6">Contact Information</h3>
             <div className="space-y-6">
               <div className="flex items-start">
                 <div className="mr-4 mt-1 bg-primary/20 p-2 rounded-full">
@@ -34,8 +34,8 @@ const ContactSection = () => {
                   </svg>
                 </div>
                 <div>
-                  <h4 className="font-medium text-navy-900">Email</h4>
-                  <a href="mailto:contact@johnsmith.com" className="text-navy-700 hover:text-primary transition-colors">
+                  <h4 className="font-medium text-yellow-900">Email</h4>
+                  <a href="mailto:contact@johnsmith.com" className="text-yellow-700 hover:text-primary transition-colors">
                     contact@johnsmith.com
                   </a>
                 </div>
@@ -48,8 +48,8 @@ const ContactSection = () => {
                   </svg>
                 </div>
                 <div>
-                  <h4 className="font-medium text-navy-900">Location</h4>
-                  <p className="text-navy-700">San Francisco, CA</p>
+                  <h4 className="font-medium text-yellow-900">Location</h4>
+                  <p className="text-yellow-700">San Francisco, CA</p>
                 </div>
               </div>
 
@@ -60,8 +60,8 @@ const ContactSection = () => {
                   </svg>
                 </div>
                 <div>
-                  <h4 className="font-medium text-navy-900">Phone</h4>
-                  <a href="tel:+11234567890" className="text-navy-700 hover:text-primary transition-colors">
+                  <h4 className="font-medium text-yellow-900">Phone</h4>
+                  <a href="tel:+11234567890" className="text-yellow-700 hover:text-primary transition-colors">
                     +1 (123) 456-7890
                   </a>
                 </div>
@@ -69,7 +69,7 @@ const ContactSection = () => {
             </div>
 
             <div className="mt-10">
-              <h3 className="text-xl font-bold text-navy-900 mb-4">Connect With Me</h3>
+              <h3 className="text-xl font-bold text-yellow-900 mb-4">Connect With Me</h3>
               <div className="flex space-x-4">
                 {[
                   { name: "GitHub", icon: "M10 0a10 10 0 0 0-3.16 19.49c.5.1.68-.22.68-.48v-1.7C4.73 17.91 4.14 16 4.14 16c-.45-1.14-1.1-1.45-1.1-1.45-.9-.61.07-.6.07-.6 1 .07 1.53 1.02 1.53 1.02.9 1.53 2.34 1.09 2.91.83.1-.65.35-1.09.63-1.34-2.2-.25-4.51-1.1-4.51-4.9 0-1.08.39-1.97 1.02-2.66-.1-.25-.44-1.26.1-2.64 0 0 .83-.27 2.75 1.02.8-.22 1.65-.33 2.5-.33.85 0 1.7.11 2.5.33 1.91-1.29 2.75-1.02 2.75-1.02.54 1.38.2 2.39.1 2.64.63.7 1.02 1.58 1.02 2.66 0 3.81-2.32 4.64-4.53 4.89.36.31.68.91.68 1.83v2.71c0 .26.18.58.69.48A10 10 0 0 0 10 0" },
@@ -79,13 +79,13 @@ const ContactSection = () => {
                   <a 
                     key={social.name}
                     href="#" 
-                    className="w-10 h-10 bg-white rounded-full flex items-center justify-center shadow-sm hover:shadow-md transition-shadow border border-navy-100"
+                    className="w-10 h-10 bg-white rounded-full flex items-center justify-center shadow-sm hover:shadow-md transition-shadow border border-yellow-100"
                     aria-label={social.name}
                   >
                     <svg 
                       viewBox="0 0 20 20" 
                       fill="currentColor" 
-                      className="w-5 h-5 text-navy-800"
+                      className="w-5 h-5 text-yellow-800"
                     >
                       <path d={social.icon} />
                     </svg>
@@ -97,55 +97,55 @@ const ContactSection = () => {
 
           <div className="animate-fade-up delay-200">
             <form onSubmit={handleSubmit} className="bg-white p-8 rounded-xl shadow-lg">
-              <h3 className="text-2xl font-bold text-navy-900 mb-6">Send Me a Message</h3>
+              <h3 className="text-2xl font-bold text-yellow-900 mb-6">Send Me a Message</h3>
               
               <div className="space-y-5">
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-5">
                   <div>
-                    <label htmlFor="name" className="block text-sm font-medium text-navy-700 mb-1">
+                    <label htmlFor="name" className="block text-sm font-medium text-yellow-700 mb-1">
                       Name
                     </label>
                     <Input 
                       id="name" 
                       placeholder="Your name" 
-                      className="border-navy-200 focus:border-primary focus:ring-1 focus:ring-primary"
+                      className="border-yellow-200 focus:border-primary focus:ring-1 focus:ring-primary"
                       required
                     />
                   </div>
                   <div>
-                    <label htmlFor="email" className="block text-sm font-medium text-navy-700 mb-1">
+                    <label htmlFor="email" className="block text-sm font-medium text-yellow-700 mb-1">
                       Email
                     </label>
                     <Input 
                       id="email" 
                       type="email" 
                       placeholder="Your email" 
-                      className="border-navy-200 focus:border-primary focus:ring-1 focus:ring-primary"
+                      className="border-yellow-200 focus:border-primary focus:ring-1 focus:ring-primary"
                       required
                     />
                   </div>
                 </div>
 
                 <div>
-                  <label htmlFor="subject" className="block text-sm font-medium text-navy-700 mb-1">
+                  <label htmlFor="subject" className="block text-sm font-medium text-yellow-700 mb-1">
                     Subject
                   </label>
                   <Input 
                     id="subject" 
                     placeholder="Subject" 
-                    className="border-navy-200 focus:border-primary focus:ring-1 focus:ring-primary"
+                    className="border-yellow-200 focus:border-primary focus:ring-1 focus:ring-primary"
                     required
                   />
                 </div>
 
                 <div>
-                  <label htmlFor="message" className="block text-sm font-medium text-navy-700 mb-1">
+                  <label htmlFor="message" className="block text-sm font-medium text-yellow-700 mb-1">
                     Message
                   </label>
                   <Textarea 
                     id="message" 
                     placeholder="Your message" 
-                    className="border-navy-200 focus:border-primary focus:ring-1 focus:ring-primary min-h-[150px]"
+                    className="border-yellow-200 focus:border-primary focus:ring-1 focus:ring-primary min-h-[150px]"
                     required
                   />
                 </div>
