@@ -1,3 +1,5 @@
+import { Button } from "@/components/ui/button";
+
 const SkillsSection = () => {
   const skills = [
     {
@@ -10,19 +12,17 @@ const SkillsSection = () => {
     },
     {
       category: "Tools & Others",
-      items: ["Git", "Docker", "AWS", "CI/CD", "Figma", "Agile/Scrum"]
+      items: ["Git", "AWS", "GCP", "CI/CD", "Figma", "Agile/Scrum"]
     }
   ];
 
   return (
-    <section id="skills" className="py-20 relative bg-gradient-to-br from-yellow-50 to-white overflow-hidden">
-      <div className="absolute inset-0 bg-[radial-gradient(circle_800px_at_100%_200px,rgba(94,129,172,0.1),transparent)] -z-10" />
-      <div className="absolute inset-0 bg-[length:30px_30px] bg-grid-yellow-900/[0.02] -z-10" />
+    <section id="skills" className="relative bg-[#8FA1A1]/10 overflow-hidden">
       <div className="section-container">
-        <div className="max-w-3xl mx-auto text-center mb-16">
-          <h2 className="text-3xl md:text-4xl font-bold text-yellow-900 mb-4">My Skills</h2>
-          <div className="h-1 w-16 bg-primary mx-auto mb-8"></div>
-          <p className="text-yellow-700">
+        <div className="max-w-3xl mx-auto text-center mb-8">
+          <h3 className="font-bold text-xl md:text-2xl text-blue-500 mb-2 md:mb-5">My Skills</h3>
+          {/* <div className="h-1 w-16 bg-primary mx-auto mb-8"></div> */}
+          <p className="text-black">
             I've worked with a range of technologies in the web development world.
             Here are my main areas of expertise:
           </p>
@@ -35,7 +35,7 @@ const SkillsSection = () => {
               className="bg-white rounded-xl shadow-lg p-8 animate-fade-up"
               style={{ animationDelay: `${index * 150}ms` }}
             >
-              <h3 className="text-xl font-bold text-yellow-900 mb-5 flex items-center">
+              <h3 className="text-xl font-bold text-primary mb-5 flex items-center">
                 <span className="w-8 h-8 rounded-full bg-primary/20 text-primary mr-3 flex items-center justify-center">
                   {index + 1}
                 </span>
@@ -50,7 +50,7 @@ const SkillsSection = () => {
                         <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
                       </svg>
                     </span>
-                    <span className="text-yellow-700">{skill}</span>
+                    <span className="text-black">{skill}</span>
                   </li>
                 ))}
               </ul>
@@ -58,17 +58,12 @@ const SkillsSection = () => {
           ))}
         </div>
 
-        <div className="mt-16 flex justify-center">
-          <div className="bg-white rounded-xl shadow-lg p-8 max-w-3xl">
-            <h3 className="text-center text-xl font-bold text-yellow-900 mb-6">Professional Growth</h3>
-            <div className="grid grid-cols-2 sm:grid-cols-4 gap-4">
-              {["Problem Solving", "Team Collaboration", "Continuous Learning", "Detail Oriented"].map((attribute) => (
-                <div key={attribute} className="text-center p-4 bg-yellow-50 rounded-lg">
-                  <p className="font-medium text-yellow-800">{attribute}</p>
-                </div>
-              ))}
-            </div>
-          </div>
+        <div className="mt-12 text-center">
+          <Button variant="default" className="btn-default" asChild>
+            <a href="https://atinistudio.com/about" target="_blank" rel="noopener noreferrer">
+              See More
+            </a>
+          </Button>
         </div>
       </div>
     </section>

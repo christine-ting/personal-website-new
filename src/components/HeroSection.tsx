@@ -33,14 +33,14 @@ const HeroSection = () => {
         className="absolute inset-0 bg-cover bg-center bg-no-repeat -z-20"
         style={{
           backgroundImage:
-            'url("/lovable-uploads/e51fbb97-b9a6-4ada-a00b-3ff6f7a58b9e.png")',
+            'url("/lovable-uploads/background.png")',
         }}
       />
       {/* Content */}
       <div className="section-container relative z-10">
         <div className="gap-12 items-center">
           <div className="animate-fade-up text-white">
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight mb-6">
+            <h1 className="flex justify-center text-5xl md:text-6xl font-bold leading-tight mb-3 md:mb-6">
               Christine Ting
             </h1>
             <p className="flex justify-center text-xl md:text-2xl max-w-lg opacity-90 font-thin">
@@ -50,7 +50,7 @@ const HeroSection = () => {
               </span>
               Founder of
             </p>
-            <div className="flex justify-center w-full mt-6 mb-8">
+            <div className="flex justify-center w-full mb-6 mt-4 md:mt-6 md:mb-8">
                 <img className="ml-2 w-24 cursor-pointer" onClick={() => window.open("https://atinistudio.com/", "_blank")} src="https://firebasestorage.googleapis.com/v0/b/personal-website-313d4.appspot.com/o/atini_logo_light.svg?alt=media&token=40113ce4-dbf4-491e-bf2c-0d3bb37190d5"></img>
             </div>
 

@@ -75,6 +75,9 @@ export default {
 					900: '#713f12',
 					950: '#422006',
 				},
+				blue: {
+					500: '#4B666F'
+				},
 				highlight: '#5E81AC'
 			},
 			borderRadius: {

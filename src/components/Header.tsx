@@ -36,6 +36,7 @@ const Header = () => {
           ? "fixed top-0 bg-white/95 backdrop-blur-sm shadow-md"
           : "absolute bottom-0 bg-transparent"
       )}
+      style={isScrolled ? {backgroundImage: 'url("/lovable-uploads/background_cropped.png")'} : {}}
     >
       <div className="max-w-7xl mx-auto flex items-center justify-center">
         {/* Desktop navigation */}
