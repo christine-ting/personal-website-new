@@ -19,7 +19,7 @@ const HeroSection = () => {
     },
     {
       icon: 'M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z',
-      href: 'https://instagram.com/johnsmith',
+      href: 'https://www.instagram.com/atinistudio',
       ariaLabel: 'Instagram Profile',
     },
   ];
@@ -35,23 +35,25 @@ const HeroSection = () => {
             'url("/lovable-uploads/e51fbb97-b9a6-4ada-a00b-3ff6f7a58b9e.png")',
         }}
       />
-
       {/* Content */}
       <div className="section-container relative z-10">
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+        <div className="gap-12 items-center">
           <div className="animate-fade-up text-white">
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight mb-6">
               Christine Ting
             </h1>
-            <div className="h-1 w-20 bg-primary mb-6"></div>
-            <p className="text-lg md:text-xl mb-8 max-w-lg opacity-90">
-            Full-Stack Developer{' '}
-              <span className="text-primary font-medium">
+            <p className="flex justify-center text-xl md:text-2xl max-w-lg opacity-90 font-thin">
+              Full-Stack Developer
+              <span className="mx-1 text-[#f5ca09] font-normal">
                 &
-              </span>{' '}
+              </span>
               Founder of
             </p>
-            <div className="flex flex-col sm:flex-row gap-4 items-center">
+            <div className="flex justify-center w-full mt-6 mb-8">
+                <img className="ml-2 w-24 cursor-pointer" onClick={() => window.open("https://atinistudio.com/", "_blank")} src="https://firebasestorage.googleapis.com/v0/b/personal-website-313d4.appspot.com/o/atini_logo_light.svg?alt=media&token=40113ce4-dbf4-491e-bf2c-0d3bb37190d5"></img>
+            </div>
+
+            <div className="flex flex-col sm:flex-row gap-4 items-center justify-center my-4">
               <div className="flex space-x-4 mb-4 sm:mb-0">
                 {socialLinks.map(({ icon, href, ariaLabel }, index) => (
                   <a
@@ -75,35 +77,6 @@ const HeroSection = () => {
                     </svg>
                   </a>
                 ))}
-              </div>
-
-              <div className="flex gap-4">
-                <Button
-                  className="bg-primary hover:bg-primary/90 text-white"
-                  asChild
-                >
-                  <a href="#projects">View My Work</a>
-                </Button>
-                <Button
-                  variant="outline"
-                  className="border-white text-white hover:bg-white/10"
-                  asChild
-                >
-                  <a href="#contact">Contact Me</a>
-                </Button>
-              </div>
-            </div>
-          </div>
-          <div className="relative animate-fade-in hidden md:block">
-            <div className="absolute -top-8 -left-8 w-24 h-24 rounded-full bg-primary/20 animate-pulse"></div>
-            <div className="absolute -bottom-8 -right-8 w-32 h-32 rounded-full bg-white/10"></div>
-            <div className="relative z-10 bg-white/10 backdrop-blur-sm rounded-2xl p-4 shadow-xl">
-              <div className="aspect-square rounded-xl bg-yellow-800/50 overflow-hidden">
-                <div className="w-full h-full bg-gradient-to-tr from-yellow-800/50 to-yellow-600/50 flex items-center justify-center">
-                  <span className="font-display text-4xl text-white opacity-90">
-                    JS
-                  </span>
-                </div>
               </div>
             </div>
           </div>
