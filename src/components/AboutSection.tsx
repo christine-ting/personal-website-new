@@ -24,11 +24,17 @@ const AboutSection = () => {
           <div className="md:col-span-7 animate-fade-up delay-200">
             <h3 className="text-2xl font-bold text-yellow-900 mb-6">A Bit About Me</h3>
             <p className="text-yellow-700 leading-relaxed mb-4">
-              I'm a passionate full-stack developer with a keen eye for design and a love for creating seamless user experiences. With over 5 years of experience in the tech industry, I've had the opportunity to work on a wide range of projects from small business websites to complex enterprise applications.
+            Hi there! I’m Christine — a passionate full-stack software engineer and proud UC Berkeley alum based in sunny Los Angeles, California ☀️
+
+I’ve always been drawn to software design and development for its incredible power to turn ideas into reality with elegance and efficiency. What excites me the most is collaborating with curious, creative minds to build meaningful products that bring ideas to life and move us toward a shared vision.
+
+I believe that only magic can surpass technology — and with that mindset, I’m eager to use my skills and creativity to craft solutions that fill real-world gaps and help make the world a better, more connected place.
+
+Feel free to reach out on social media or shoot me an email — I’d love to chat about anything from tech to travel, career journeys to everyday life!
             </p>
-            <p className="text-yellow-700 leading-relaxed mb-6">
+            {/* <p className="text-yellow-700 leading-relaxed mb-6">
               When I'm not coding, you can find me exploring the outdoors, experimenting with new recipes, or diving into a good book. I believe in continuous learning and pushing my creative boundaries.
-            </p>
+            </p> */}
             
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 mt-8">
               <div>

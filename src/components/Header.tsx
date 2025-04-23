@@ -8,7 +8,7 @@ const Header = () => {
   useEffect(() => {
     const handleScroll = () => {
       const scrollPosition = window.scrollY;
-      setIsScrolled(scrollPosition > 50);
+      setIsScrolled(scrollPosition > (window.innerHeight - 60));
     };
 
     window.addEventListener("scroll", handleScroll);
@@ -22,19 +22,19 @@ const Header = () => {
   };
 
   const navLinks = [
-    { name: "About", href: "#about" },
-    { name: "Skills", href: "#skills" },
-    { name: "Projects", href: "#projects" },
-    { name: "Contact", href: "#contact" },
+    { name: "ABOUT", href: "#about" },
+    { name: "SKILLS", href: "#skills" },
+    { name: "PROJECTS", href: "#projects" },
+    { name: "CONTACT", href: "#contact" },
   ];
 
   return (
     <header
       className={cn(
-        "fixed top-0 w-full z-50 transition-all duration-300 py-4 px-4 md:px-8",
+        "w-full z-50 transition-all duration-300 h-[60px] flex items-center justify-center",
         isScrolled
-          ? "bg-white/95 backdrop-blur-sm shadow-md"
-          : "bg-transparent"
+          ? "fixed top-0 bg-white/95 backdrop-blur-sm shadow-md"
+          : "absolute bottom-0 bg-transparent"
       )}
     >
       <div className="max-w-7xl mx-auto flex items-center justify-center">
@@ -44,7 +44,7 @@ const Header = () => {
             <a
               key={link.name}
               href={link.href}
-              className="nav-link font-medium text-white hover:text-white transition-colors duration-300"
+              className="nav-link font-extralight text-primary hover:text-white transition-colors duration-300"
             >
               {link.name}
             </a>

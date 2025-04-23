@@ -1,4 +1,5 @@
 import { Button } from '@/components/ui/button';
+import Header from './Header';
 
 const HeroSection = () => {
   const socialLinks = [
@@ -82,6 +83,7 @@ const HeroSection = () => {
           </div>
         </div>
       </div>
+        <Header />
     </section>
   );
 };
