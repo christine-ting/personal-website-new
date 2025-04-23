@@ -1,6 +1,6 @@
 const AboutSection = () => {
   return (
-    <section id="about" className="py-20 relative bg-gradient-to-br from-white to-yellow-50/30 overflow-hidden">
+    <section id="about" className="py-10 relative bg-gradient-to-br from-white to-yellow-50/30 overflow-hidden">
       <div className="absolute inset-0 bg-[radial-gradient(circle_500px_at_50%_200px,rgba(94,129,172,0.1),transparent)] -z-10" />
       <div className="absolute inset-0 bg-[length:40px_40px] bg-grid-yellow-900/[0.02] -z-10" />
       <div className="section-container">
@@ -15,7 +15,7 @@ const AboutSection = () => {
               <div className="absolute inset-0 bg-primary/10 rounded-xl transform rotate-3"></div>
               <div className="relative aspect-[4/5] bg-gradient-to-tr from-yellow-100 to-yellow-50 rounded-xl overflow-hidden border border-yellow-100 shadow-lg">
                 <div className="w-full h-full flex items-center justify-center bg-yellow-200/20">
-                  <span className="font-display text-5xl text-yellow-800/30">Portrait</span>
+                  <img className="" src="https://firebasestorage.googleapis.com/v0/b/personal-website-313d4.appspot.com/o/profile_photo.JPG?alt=media&token=e3d10d1c-4652-403d-abbe-1f4f65d19550"></img>
                 </div>
               </div>
             </div>
@@ -24,17 +24,15 @@ const AboutSection = () => {
           <div className="md:col-span-7 animate-fade-up delay-200">
             <h3 className="text-2xl font-bold text-yellow-900 mb-6">A Bit About Me</h3>
             <p className="text-yellow-700 leading-relaxed mb-4">
-            Hi there! I’m Christine — a passionate full-stack software engineer and proud UC Berkeley alum based in sunny Los Angeles, California ☀️
-
-I’ve always been drawn to software design and development for its incredible power to turn ideas into reality with elegance and efficiency. What excites me the most is collaborating with curious, creative minds to build meaningful products that bring ideas to life and move us toward a shared vision.
+            Hi there! I’m Christine, a passionate full-stack software engineer and proud UC Berkeley alum based in sunny Los Angeles, California ☀️
+            </p>
+            <p className="text-yellow-700 leading-relaxed mb-6">
+            I’ve always been drawn to software design and development for its incredible power to turn ideas into reality with elegance and efficiency. What excites me the most is collaborating with curious, creative minds to build meaningful products that bring ideas to life and move us toward a shared vision.
 
 I believe that only magic can surpass technology — and with that mindset, I’m eager to use my skills and creativity to craft solutions that fill real-world gaps and help make the world a better, more connected place.
 
 Feel free to reach out on social media or shoot me an email — I’d love to chat about anything from tech to travel, career journeys to everyday life!
             </p>
-            {/* <p className="text-yellow-700 leading-relaxed mb-6">
-              When I'm not coding, you can find me exploring the outdoors, experimenting with new recipes, or diving into a good book. I believe in continuous learning and pushing my creative boundaries.
-            </p> */}
             
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 mt-8">
               <div>

@@ -3,7 +3,7 @@ import { cn } from "@/lib/utils";
 
 const Header = () => {
   const [isScrolled, setIsScrolled] = useState(false);
-  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  // const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -17,9 +17,9 @@ const Header = () => {
     };
   }, []);
 
-  const toggleMobileMenu = () => {
-    setIsMobileMenuOpen(!isMobileMenuOpen);
-  };
+  // const toggleMobileMenu = () => {
+  //   setIsMobileMenuOpen(!isMobileMenuOpen);
+  // };
 
   const navLinks = [
     { name: "ABOUT", href: "#about" },
@@ -39,7 +39,7 @@ const Header = () => {
     >
       <div className="max-w-7xl mx-auto flex items-center justify-center">
         {/* Desktop navigation */}
-        <nav className="hidden md:flex items-center space-x-8">
+        <nav className="flex items-center space-x-5 sm:space-x-8">
           {navLinks.map((link) => (
             <a
               key={link.name}
@@ -52,7 +52,7 @@ const Header = () => {
         </nav>
 
         {/* Mobile menu button */}
-        <button
+        {/* <button
           onClick={toggleMobileMenu}
           className="md:hidden text-yellow-900 focus:outline-none"
           aria-label="Toggle menu"
@@ -80,11 +80,11 @@ const Header = () => {
               />
             )}
           </svg>
-        </button>
+        </button> */}
       </div>
 
       {/* Mobile navigation */}
-      {isMobileMenuOpen && (
+      {/* {isMobileMenuOpen && (
         <div className="md:hidden bg-white absolute top-full left-0 w-full shadow-md py-4">
           <div className="flex flex-col space-y-4 px-8">
             {navLinks.map((link) => (
@@ -99,7 +99,7 @@ const Header = () => {
             ))}
           </div>
         </div>
-      )}
+      )} */}
     </header>
   );
 };
