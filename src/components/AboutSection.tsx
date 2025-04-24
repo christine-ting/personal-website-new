@@ -67,7 +67,15 @@ const AboutSection = () => {
                 <ul className="space-y-1 md:space-y-2">
                   <li className="flex items-start">
                     <span className="text-primary font-medium">2021 - Present</span>
-                    <span className="ml-4 text-black">Founder @ Atini Studio Inc.</span>
+                    <div className="ml-4 text-black flex items-center">
+                      <span>Founder @</span>
+                      <a href="https://atinistudio.com" target="_blank" rel="noopener noreferrer" className="ml-1 hover:text-primary flex items-center">
+                        Atini Studio
+                        <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4 ml-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
+                        </svg>
+                      </a>
+                    </div>
                   </li>
                   <li className="flex items-start">
                     <span className="text-primary font-medium">2020-2022</span>

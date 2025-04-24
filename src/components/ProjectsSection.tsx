@@ -29,14 +29,12 @@ const ProjectsSection = () => {
   ];
 
   return (
-    <section id="projects" className="py-2 relative bg-gradient-to-br from-white via-yellow-50/10 to-white overflow-hidden">
-      <div className="absolute inset-0 bg-[radial-gradient(circle_500px_at_-100px_500px,rgba(94,129,172,0.1),transparent)] -z-10" />
-      <div className="absolute top-0 right-0 w-1/2 h-1/2 bg-[radial-gradient(circle_400px_at_100%_0%,rgba(94,129,172,0.08),transparent)] -z-10" />
+    <section id="projects" className="py-2 relative bg-gradient-to-br from-slate-50 via-blue-50/10 to-slate-50 overflow-hidden">
       <div className="section-container">
-        <div className="max-w-3xl mx-auto text-center mb-16">
-          <h3 className="font-bold text-xl md:text-2xl text-blue-500 mb-2 md:mb-5">Featured Projects</h3>
-          <p className="text-black">
-            Here are some of my recent projects that showcase my skills and expertise.
+      <div className="max-w-3xl mx-auto text-center mb-8">
+          <h3 className="font-bold text-xl md:text-2xl text-primary mb-2 md:mb-5">Featured Projects</h3>
+          <p className="text-blue-100">
+          Here are some of my recent projects that showcase my skills and expertise.
           </p>
         </div>
 

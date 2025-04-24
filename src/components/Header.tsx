@@ -21,21 +21,25 @@ const Header = () => {
   //   setIsMobileMenuOpen(!isMobileMenuOpen);
   // };
 
-  const handleNavClick = (e: React.MouseEvent<HTMLAnchorElement>, href: string) => {
+  const handleNavClick = (e: React.MouseEvent<HTMLAnchorElement>, link: any) => {
     e.preventDefault();
-    const element = document.querySelector(href);
-    if (element) {
-      element.scrollIntoView({
+    if (link.name === 'PROJECTS') {
+      window.open(link.href, '_blank');
+    } else {
+      const element = document.querySelector(link.href);
+      if (element) {
+        element.scrollIntoView({
         behavior: 'smooth',
         block: 'start'
       });
+    }
     }
   };
 
   const navLinks = [
     { name: "ABOUT", href: "#about" },
     { name: "SKILLS", href: "#skills" },
-    { name: "PROJECTS", href: "#projects" },
+    { name: "PROJECTS", href: "https://atinistudio.com/projects" },
     { name: "CONTACT", href: "#contact" },
   ];
 
@@ -56,7 +60,7 @@ const Header = () => {
             <a
               key={link.name}
               href={link.href}
-              onClick={(e) => handleNavClick(e, link.href)}
+              onClick={(e) => handleNavClick(e, link)}
               className="nav-link font-extralight text-primary hover:text-white transition-colors duration-300"
             >
               {link.name}
