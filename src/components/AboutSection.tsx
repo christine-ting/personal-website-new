@@ -23,7 +23,7 @@ const AboutSection = () => {
           <h3 className="font-bold text-xl md:text-2xl text-blue-500 mb-2 md:mb-5 flex items-center">About Me</h3>
           <div className="text-black">
           <p className="leading-relaxed mb-2">
-            Hi there! I'm Christine, a passionate full-stack software engineer and proud UC Berkeley alum based in sunny Los Angeles, California ☀️
+            Hi there! I'm Christine, a passionate full stack software engineer and proud UC Berkeley alum based in sunny Los Angeles, California ☀️
             </p>
             <p className="leading-relaxed mb-2">
             I've always been drawn to software design and development for its incredible power to turn ideas into reality with elegance and efficiency. What drives me most is the opportunity to learn, build, and solve problems with others — working as a team toward a shared vision is where I thrive.
