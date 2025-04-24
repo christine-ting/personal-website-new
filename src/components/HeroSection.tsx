@@ -1,13 +1,23 @@
 import Header from './Header';
 import { socialLinks } from '@/config/socialLinks';
+import Paint from './Paint';
+import { useState } from 'react';
 
 const HeroSection = () => {
+  const [isDarkMode, setIsDarkMode] = useState(false);
+
+  const toggleDarkMode = () => {
+    setIsDarkMode(!isDarkMode);
+  };
+
   return (
     <section
       className="min-h-screen flex items-center pt-16 relative overflow-hidden"
     >
-      <div
-        className="absolute inset-0 bg-cover bg-center bg-no-repeat -z-20"
+            <div
+        className={`absolute inset-0 bg-cover bg-center bg-no-repeat -z-20 ${
+          isDarkMode ? '' : 'brightness-100 grayscale'
+        }`}
         style={{
           backgroundImage:
             'url("/lovable-uploads/background.png")',
@@ -60,7 +70,11 @@ const HeroSection = () => {
           </div>
         </div>
       </div>
-        <Header />
+      {/* Paint Component */}
+      <div className="absolute bottom-8 right-8 z-20 cursor-pointer" onClick={toggleDarkMode}>
+        <Paint color={isDarkMode} />
+      </div>
+      <Header />
     </section>
   );
 };
