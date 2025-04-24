@@ -1,5 +1,5 @@
-import { useState, useEffect } from "react";
-import { cn } from "@/lib/utils";
+import { useState, useEffect } from 'react';
+import { cn } from '@/lib/utils';
 
 const Header = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -8,12 +8,12 @@ const Header = () => {
   useEffect(() => {
     const handleScroll = () => {
       const scrollPosition = window.scrollY;
-      setIsScrolled(scrollPosition > (window.innerHeight - 60));
+      setIsScrolled(scrollPosition > window.innerHeight - 60);
     };
 
-    window.addEventListener("scroll", handleScroll);
+    window.addEventListener('scroll', handleScroll);
     return () => {
-      window.removeEventListener("scroll", handleScroll);
+      window.removeEventListener('scroll', handleScroll);
     };
   }, []);
 
@@ -21,7 +21,10 @@ const Header = () => {
   //   setIsMobileMenuOpen(!isMobileMenuOpen);
   // };
 
-  const handleNavClick = (e: React.MouseEvent<HTMLAnchorElement>, link: any) => {
+  const handleNavClick = (
+    e: React.MouseEvent<HTMLAnchorElement>,
+    link: any
+  ) => {
     e.preventDefault();
     if (link.name === 'PROJECTS') {
       window.open(link.href, '_blank');
@@ -29,29 +32,35 @@ const Header = () => {
       const element = document.querySelector(link.href);
       if (element) {
         element.scrollIntoView({
-        behavior: 'smooth',
-        block: 'start'
-      });
-    }
+          behavior: 'smooth',
+          block: 'start',
+        });
+      }
     }
   };
 
   const navLinks = [
-    { name: "ABOUT", href: "#about" },
-    { name: "SKILLS", href: "#skills" },
-    { name: "PROJECTS", href: "https://atinistudio.com/projects" },
-    { name: "CONTACT", href: "#contact" },
+    { name: 'ABOUT', href: '#about' },
+    { name: 'SKILLS', href: '#skills' },
+    { name: 'PROJECTS', href: 'https://atinistudio.com/projects' },
+    { name: 'CONTACT', href: '#contact' },
   ];
 
   return (
     <header
       className={cn(
-        "w-full z-50 transition-all duration-300 h-[60px] flex items-center justify-center",
+        'w-full z-50 transition-all duration-300 h-[60px] flex items-center justify-center',
         isScrolled
-          ? "fixed top-0 bg-white/95 backdrop-blur-sm shadow-md"
-          : "absolute bottom-0 bg-transparent"
+          ? 'fixed top-0 bg-white/95 backdrop-blur-sm shadow-md'
+          : 'absolute bottom-0 bg-transparent'
       )}
-      style={isScrolled ? {backgroundImage: 'url("/lovable-uploads/background_cropped.png")'} : {}}
+      style={
+        isScrolled
+          ? {
+              backgroundImage: 'url("/lovable-uploads/background_cropped.png")',
+            }
+          : {}
+      }
     >
       <div className="max-w-7xl mx-auto flex items-center justify-center">
         {/* Desktop navigation */}

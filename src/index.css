@@ -92,10 +92,14 @@
 
   body {
     @apply bg-background text-foreground font-sans scroll-smooth;
-    background-color: #192F38; /* Fallback direct color */
+    background-color: #192f38; /* Fallback direct color */
   }
 
-  h1, h2, h3, h4, h5 {
+  h1,
+  h2,
+  h3,
+  h4,
+  h5 {
     @apply font-display;
   }
 }
@@ -104,19 +108,19 @@
   .section-container {
     @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10 md:py-20;
   }
-  
+
   .heading-underline {
     @apply relative inline-block after:content-[''] after:absolute after:w-1/2 after:h-1 after:bg-primary after:bottom-0 after:left-0 pb-2;
   }
-  
+
   .nav-link {
     @apply text-yellow-800 hover:text-primary transition-colors duration-300;
   }
-  
+
   .btn-primary {
     @apply bg-yellow-800 text-white hover:bg-yellow-700 px-6 py-3 rounded-md transition-all duration-300 font-medium hover:shadow-lg;
   }
-  
+
   .btn-outline {
     @apply border-2 border-yellow-800 text-yellow-800 hover:bg-yellow-800 hover:text-white px-6 py-2.5 rounded-md transition-all duration-300 font-medium;
   }

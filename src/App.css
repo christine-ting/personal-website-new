@@ -8,7 +8,7 @@
 }
 
 ::-webkit-scrollbar-track {
-  background-color: #192F38;
+  background-color: #192f38;
 }
 
 ::-webkit-scrollbar-thumb {
@@ -43,14 +43,14 @@
 
 /* Gradient Text */
 .gradient-text {
-  background: linear-gradient(90deg, #5E81AC 0%, #81A1C1 100%);
+  background: linear-gradient(90deg, #5e81ac 0%, #81a1c1 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
 /* Focus outline for accessibility */
 *:focus-visible {
-  outline: 2px solid #5E81AC;
+  outline: 2px solid #5e81ac;
   outline-offset: 2px;
 }
 
@@ -66,13 +66,15 @@
 /* Grid Background Pattern */
 .bg-grid-yellow-100 {
   background-size: 40px 40px;
-  background-image: linear-gradient(to right, rgba(217, 224, 239, 0.1) 1px, transparent 1px),
+  background-image:
+    linear-gradient(to right, rgba(217, 224, 239, 0.1) 1px, transparent 1px),
     linear-gradient(to bottom, rgba(217, 224, 239, 0.1) 1px, transparent 1px);
 }
 
 .bg-grid-yellow-900 {
   background-size: 40px 40px;
-  background-image: linear-gradient(to right, rgba(37, 49, 86, 0.05) 1px, transparent 1px),
+  background-image:
+    linear-gradient(to right, rgba(37, 49, 86, 0.05) 1px, transparent 1px),
     linear-gradient(to bottom, rgba(37, 49, 86, 0.05) 1px, transparent 1px);
 }
 
@@ -81,7 +83,12 @@
   cursor: pointer;
   transition: transform 0.2s ease;
   padding: 8px;
-  background-color: rgba(25, 47, 56, 0.5); /* Using your dark background color with opacity */
+  background-color: rgba(
+    25,
+    47,
+    56,
+    0.5
+  ); /* Using your dark background color with opacity */
   backdrop-filter: blur(8px);
   border-radius: 50%;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);

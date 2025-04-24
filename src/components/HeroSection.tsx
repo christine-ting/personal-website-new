@@ -11,16 +11,13 @@ const HeroSection = () => {
   };
 
   return (
-    <section
-      className="min-h-screen flex items-center pt-16 relative overflow-hidden"
-    >
-            <div
+    <section className="min-h-screen flex items-center pt-16 relative overflow-hidden">
+      <div
         className={`absolute inset-0 bg-cover bg-center bg-no-repeat -z-20 ${
           isDarkMode ? '' : 'brightness-100 grayscale'
         }`}
         style={{
-          backgroundImage:
-            'url("/lovable-uploads/background.png")',
+          backgroundImage: 'url("/lovable-uploads/background.png")',
         }}
       />
       {/* Content */}
@@ -32,13 +29,17 @@ const HeroSection = () => {
             </h1>
             <p className="flex justify-center text-xl md:text-2xl max-w-lg opacity-90 font-thin">
               Full-Stack Developer
-              <span className="mx-1 text-yellow-100 font-normal">
-                &
-              </span>
+              <span className="mx-1 text-yellow-100 font-normal">&</span>
               Founder of
             </p>
             <div className="flex justify-center w-full mb-6 mt-4 md:mt-6 md:mb-8">
-                <img className="ml-2 w-24 cursor-pointer" onClick={() => window.open("https://atinistudio.com/", "_blank")} src="https://firebasestorage.googleapis.com/v0/b/personal-website-313d4.appspot.com/o/atini_logo_light.svg?alt=media&token=40113ce4-dbf4-491e-bf2c-0d3bb37190d5"></img>
+              <img
+                className="ml-2 w-24 cursor-pointer"
+                onClick={() =>
+                  window.open('https://atinistudio.com/', '_blank')
+                }
+                src="https://firebasestorage.googleapis.com/v0/b/personal-website-313d4.appspot.com/o/atini_logo_light.svg?alt=media&token=40113ce4-dbf4-491e-bf2c-0d3bb37190d5"
+              ></img>
             </div>
 
             <div className="flex flex-col sm:flex-row gap-4 items-center justify-center my-4">
@@ -71,7 +72,10 @@ const HeroSection = () => {
         </div>
       </div>
       {/* Paint Component */}
-      <div className="absolute top-5 right-5 z-20 cursor-pointer" onClick={toggleDarkMode}>
+      <div
+        className="absolute top-5 right-5 z-20 cursor-pointer"
+        onClick={toggleDarkMode}
+      >
         <Paint color={isDarkMode} />
       </div>
       <Header />
