@@ -64,7 +64,7 @@ const AboutSection = () => {
               
               <div>
                 <h4 className="text-lg font-bold text-blue-500 mb-3">Experience</h4>
-                <ul className="space-y-1 md:space-y-2">
+                <ul className="space-y-2">
                   <li className="flex items-start">
                     <span className="text-primary font-medium">2021 - Present</span>
                     <div className="ml-4 text-black flex items-center">
