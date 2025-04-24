@@ -110,11 +110,11 @@ const AboutSection = () => {
                   Experience
                 </h4>
                 <ul className="space-y-2">
-                  <li className="flex items-start">
-                    <span className="text-primary font-medium">
+                  <li className="flex flex-col md:flex-row items-start">
+                    <div className="text-primary font-medium">
                       2021 - Present
-                    </span>
-                    <div className="ml-4 text-black flex items-center">
+                    </div>
+                    <div className="ml-0 md:ml-4 text-black flex items-center">
                       <span>Founder @</span>
                       <a
                         href="https://atinistudio.com"
@@ -140,17 +140,17 @@ const AboutSection = () => {
                       </a>
                     </div>
                   </li>
-                  <li className="flex items-start">
-                    <span className="text-primary font-medium">2020-2022</span>
-                    <span className="ml-4 text-black">
+                  <li className="flex flex-col md:flex-row items-start">
+                    <div className="text-primary font-medium">2020-2022</div>
+                    <div className="ml-0 md:ml-4 text-black">
                       Software Engineer @ Camping World
-                    </span>
+                    </div>
                   </li>
-                  <li className="flex items-start">
-                    <span className="text-primary font-medium">2020-2020</span>
-                    <span className="ml-4 text-black">
+                  <li className="flex flex-col md:flex-row items-start">
+                    <div className="text-primary font-medium">2020</div>
+                    <div className="ml-0 md:ml-4 text-black">
                       Software Engineering Teaching Assistant @ Hack Reactor
-                    </span>
+                    </div>
                   </li>
                 </ul>
               </div>
