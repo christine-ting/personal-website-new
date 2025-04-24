@@ -78,7 +78,7 @@ export default {
 				blue: {
 					100: '#C2CBCD',
 					300: '#728F8B',
-					500: '#4B666F'
+					500: '#4B666F',
 				},
 				highlight: '#5E81AC'
 			},
