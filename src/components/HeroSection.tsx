@@ -71,7 +71,7 @@ const HeroSection = () => {
         </div>
       </div>
       {/* Paint Component */}
-      <div className="absolute bottom-8 right-8 z-20 cursor-pointer" onClick={toggleDarkMode}>
+      <div className="absolute top-5 right-5 z-20 cursor-pointer" onClick={toggleDarkMode}>
         <Paint color={isDarkMode} />
       </div>
       <Header />

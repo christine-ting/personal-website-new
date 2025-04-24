@@ -8,8 +8,8 @@ const Paint: React.FC<PaintProps> = ({ color }) => (
   <div className="paint">
     <svg
       xmlns="http://www.w3.org/2000/svg"
-      width="36"
-      height="36"
+      width="28"
+      height="28"
       fill="lightGray"
       viewBox="0 0 24 24"
     >
@@ -24,4 +24,4 @@ const Paint: React.FC<PaintProps> = ({ color }) => (
   </div>
 );
 
-export default Paint; 
+export default Paint;
