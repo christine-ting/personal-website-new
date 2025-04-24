@@ -1,13 +1,59 @@
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
-import { socialLinks } from "@/config/socialLinks";
+import { useState } from "react";
+import axios from "axios";
+import { useToast } from "@/components/ui/use-toast";
+
+const apiBaseUrl = import.meta.env.VITE_API_BASE_URL
+const apiKey = import.meta.env.VITE_API_KEY
 
 const ContactSection = () => {
-  const handleSubmit = (e: React.FormEvent) => {
+  const { toast } = useToast();
+  const [formData, setFormData] = useState({
+    name: "",
+    email: "",
+    message: ""
+  });
+  const [isSubmitting, setIsSubmitting] = useState(false);
+
+  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
+    const { id, value } = e.target;
+    setFormData(prev => ({
+      ...prev,
+      [id]: value
+    }));
+  };
+
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    // This would normally send the form data to a backend
-    console.log("Form submitted");
+    setIsSubmitting(true);
+    try {
+      await axios.post(`${apiBaseUrl}/inquiry`, {
+        ...formData,
+        apiKey: apiKey,
+        fromPersonal: true,
+      });
+      toast({
+        title: "Message sent!",
+        description: "Thank you for your message. I will reply to you soon!",
+        variant: "default",
+      });
+      setFormData({
+        name: "",
+        email: "",
+        message: ""
+      });
+    } catch (err) {
+      console.error(err);
+      toast({
+        title: "Error",
+        description: "Failed to send message. Please try again.",
+        variant: "destructive",
+      });
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   return (
@@ -39,6 +85,8 @@ const ContactSection = () => {
                       placeholder="Your name" 
                       className="border-gray-200 bg-white shadow-sm focus:border-blue-500 focus:ring-0 transition-colors"
                       required
+                      value={formData.name}
+                      onChange={handleChange}
                     />
                   </div>
                   <div>
@@ -51,6 +99,8 @@ const ContactSection = () => {
                       placeholder="Your email" 
                       className="border-gray-200 bg-white shadow-sm focus:border-blue-500 focus:ring-0 transition-colors"
                       required
+                      value={formData.email}
+                      onChange={handleChange}
                     />
                 </div>
                 <div>
@@ -62,14 +112,17 @@ const ContactSection = () => {
                     placeholder="Your message" 
                     className="border-gray-200 bg-white shadow-sm focus:border-blue-500 focus:ring-0 transition-colors min-h-[150px]"
                     required
+                    value={formData.message}
+                    onChange={handleChange}
                   />
                 </div>
 
                 <Button 
                   type="submit" 
                   className="w-full bg-primary text-white font-medium py-2.5 rounded-lg shadow-md hover:shadow-lg transition-all duration-200"
+                  disabled={isSubmitting}
                 >
-                  Send Message
+                  {isSubmitting ? "Sending..." : "Send Message"}
                 </Button>
               </div>
             </form>
