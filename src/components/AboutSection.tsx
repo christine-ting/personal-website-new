@@ -23,42 +23,59 @@ const AboutSection = () => {
           <h3 className="font-bold text-xl md:text-2xl text-blue-500 mb-2 md:mb-5 flex items-center">About Me</h3>
           <div className="text-black">
           <p className="leading-relaxed mb-2">
-            Hi there! I’m Christine, a passionate full-stack software engineer and proud UC Berkeley alum based in sunny Los Angeles, California ☀️
+            Hi there! I'm Christine, a passionate full-stack software engineer and proud UC Berkeley alum based in sunny Los Angeles, California ☀️
             </p>
             <p className="leading-relaxed mb-2">
-            I’ve always been drawn to software design and development for its incredible power to turn ideas into reality with elegance and efficiency. What excites me the most is collaborating with curious, creative minds to build meaningful products that bring ideas to life and move us toward a shared vision.
+            I've always been drawn to software design and development for its incredible power to turn ideas into reality with elegance and efficiency. What drives me most is the opportunity to learn, build, and solve problems with others — working as a team toward a shared vision is where I thrive.
             </p>
             <p className="leading-relaxed mb-2">
-            I believe that only magic can surpass technology, and with that mindset, I’m eager to use my skills and creativity to craft solutions that fill real-world gaps and help make the world a better, more connected place.
+            I believe that only magic can surpass technology, and with that mindset, I'm eager to use my skills and creativity to craft solutions that fill real-world gaps and help make the world a better, more connected place.
             </p>
             <p className="leading-relaxed">
-            Feel free to reach out on social media or <a className="text-primary" href="mailto:christine.t@atinistudio.com">send me an email</a> — I’d love to chat about anything from tech to travel, career journeys to everyday life!
+            Feel free to reach out on social media or <a className="text-primary" href="mailto:christine.t@atinistudio.com">send me an email</a> — I'd love to chat about anything from tech to travel, career journeys to everyday life!
             </p>
           </div>
           
-            <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 mt-8">
+            <div className="grid grid-cols-1 gap-6 mt-4 md:mt-6">
               <div>
                 <h4 className="text-lg font-bold text-blue-500 mb-3">Education</h4>
-                <ul className="space-y-3">
-                  <li className="flex items-start">
-                    <span className="text-black">BSc in Computer Science, University of Technology</span>
-                  </li>
-                  <li className="flex items-start">
-                    <span className="text-black">MSc in Web Development, Digital Institute</span>
-                  </li>
-                </ul>
+                <div className="space-y-2">
+                  <div>
+                    <div className="text-black flex items-center gap-2">
+                      <img src="/berkeley-cal-logo.png" alt="UC Berkeley logo" className="w-6" />
+                      University of California, Berkeley
+                    </div>
+                    <div className="text-blue-300 text-sm ml-8">B.A. in Applied Mathematics and Economics (Double Major)</div>
+                  </div>
+                  <div>
+                  <div className="text-black flex items-center gap-2">
+                  <img src="/hack-reactor-logo.png" alt="Hack Reactor logo" className="w-6" />
+                    Hack Reactor</div>
+                    <div className="text-blue-300 text-sm ml-8">Software Engineering Immersive</div>
+                  </div>
+                  <div>
+                  <div className="text-black flex items-center gap-2">
+                    <img src="/lse-logo.png" alt="LSE logo" className="w-6" />
+                      The London School of Economics and Political Science (LSE)</div>
+                    <div className="text-blue-300 text-sm ml-8">Summer Study Abroad Program</div>
+                  </div>
+                </div>
               </div>
               
               <div>
                 <h4 className="text-lg font-bold text-blue-500 mb-3">Experience</h4>
-                <ul className="space-y-3">
+                <ul className="space-y-1 md:space-y-2">
                   <li className="flex items-start">
-                    <span className="text-primary font-medium">2020 - 2022</span>
-                    <span className="ml-4 text-black">Frontend Developer at Tech Solutions Inc.</span>
+                    <span className="text-primary font-medium">2021 - Present</span>
+                    <span className="ml-4 text-black">Founder @ Atini Studio Inc.</span>
                   </li>
                   <li className="flex items-start">
-                    <span className="text-primary font-medium">2022 - Present</span>
-                    <span className="ml-4 text-black">Full Stack Developer at Digital Innovations</span>
+                    <span className="text-primary font-medium">2020-2022</span>
+                    <span className="ml-4 text-black">Software Engineer @ Camping World</span>
+                  </li>
+                  <li className="flex items-start">
+                    <span className="text-primary font-medium">2020-2020</span>
+                    <span className="ml-4 text-black">Software Engineering Teaching Assistant @ Hack Reactor</span>
                   </li>
                 </ul>
               </div>

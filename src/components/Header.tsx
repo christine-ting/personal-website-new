@@ -21,6 +21,17 @@ const Header = () => {
   //   setIsMobileMenuOpen(!isMobileMenuOpen);
   // };
 
+  const handleNavClick = (e: React.MouseEvent<HTMLAnchorElement>, href: string) => {
+    e.preventDefault();
+    const element = document.querySelector(href);
+    if (element) {
+      element.scrollIntoView({
+        behavior: 'smooth',
+        block: 'start'
+      });
+    }
+  };
+
   const navLinks = [
     { name: "ABOUT", href: "#about" },
     { name: "SKILLS", href: "#skills" },
@@ -45,6 +56,7 @@ const Header = () => {
             <a
               key={link.name}
               href={link.href}
+              onClick={(e) => handleNavClick(e, link.href)}
               className="nav-link font-extralight text-primary hover:text-white transition-colors duration-300"
             >
               {link.name}

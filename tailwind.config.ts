@@ -64,7 +64,7 @@ export default {
 				},
 				yellow: {
 					50: '#fefce8',
-					100: '#fef9c3',
+					100: '#f5ca09',
 					200: '#fef08a',
 					300: '#fde047',
 					400: '#facc15',
@@ -76,6 +76,8 @@ export default {
 					950: '#422006',
 				},
 				blue: {
+					100: '#C2CBCD',
+					300: '#728F8B',
 					500: '#4B666F'
 				},
 				highlight: '#5E81AC'

@@ -45,7 +45,7 @@ const HeroSection = () => {
             </h1>
             <p className="flex justify-center text-xl md:text-2xl max-w-lg opacity-90 font-thin">
               Full-Stack Developer
-              <span className="mx-1 text-[#f5ca09] font-normal">
+              <span className="mx-1 text-yellow-100 font-normal">
                 &
               </span>
               Founder of
