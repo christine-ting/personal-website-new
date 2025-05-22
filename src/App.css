@@ -106,3 +106,7 @@
 .paint:hover svg {
   fill: #f5ca09; /* Your yellow accent color */
 }
+
+h2 {
+  font-family: 'Raleway', sans-serif;
+}

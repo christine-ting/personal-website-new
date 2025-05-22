@@ -9,49 +9,96 @@ const AboutSection = () => {
           <div className="text-xl md:text-2xl text-yellow-900 mb-4">ABOUT</div>
           <div className="h-1 w-16 bg-primary mx-auto mb-8"></div>
         </div> */}
-
-        <div className="grid grid-cols-1 px-3 md:px-8 lg:px-16 lg:grid-cols-12 gap-6 md:gap-12 items-center">
-          <div className="md:col-span-5 animate-fade-up">
-            <div className="relative max-w-[300px] lg:max-w-none">
-              <div className="absolute inset-0 bg-[#BABFB8]/50 rounded-xl transform rotate-3"></div>
-              <div className="relative aspect-[4/5] rounded-xl overflow-hidden shadow-lg">
-                <div className="w-full h-full flex items-center justify-center bg-[#BABFB8]/20">
-                  <img
-                    className=""
-                    src="https://firebasestorage.googleapis.com/v0/b/personal-website-313d4.appspot.com/o/profile_photo.JPG?alt=media&token=e3d10d1c-4652-403d-abbe-1f4f65d19550"
-                  ></img>
+        <div className="grid grid-cols-1 md:grid-cols-12 items-start gap-2 lg:gap-6">
+          {/* Left Column */}
+          <div className="md:col-span-5 flex flex-col items-center md:items-start gap-4 animate-fade-up">
+            {/* About Me Heading */}
+            <h3 className="text-blue-500 font-bold text-lg md:text-xl mb-2 uppercase tracking-wide">
+              About Me
+            </h3>
+            {/* Profile Image */}
+            <div className="relative w-36 h-36 rounded-full shadow-lg overflow-hidden mb-4">
+              <img
+                className="rounded-full object-cover w-full h-full"
+                src="https://firebasestorage.googleapis.com/v0/b/personal-website-313d4.appspot.com/o/profile_photo.JPG?alt=media&token=e3d10d1c-4652-403d-abbe-1f4f65d19550"
+                alt="Profile photo"
+              />
+            </div>
+            {/* Education */}
+            <div className="flex flex-col w-full">
+              <div className="flex gap-3">
+                <img
+                  src="/cal-logo.png"
+                  alt="UC Berkeley logo"
+                  className="w-10 h-10 object-contain"
+                />
+                <div>
+                  <div className="font-semibold text-black leading-tight text-sm md:text-md">
+                    UNIVERSITY OF CALIFORNIA, BERKELEY
+                  </div>
+                  <div className="text-xs md:text-sm text-neutral-500 mt-1">
+                    B.A. in Applied Mathematics and Economics (Double Major)
+                  </div>
+                  <div className="w-[200px] xl:w-[350px] min-w-50 h-[1.5px] bg-black opacity-20 my-4"></div>
+                </div>
+              </div>
+              <div className="flex gap-3">
+                <img
+                  src="/hack-reactor-logo.png"
+                  alt="Hack Reactor logo"
+                  className="w-9 h-9 object-contain"
+                />
+                <div>
+                  <div className="font-semibold text-black leading-tight text-sm md:text-md">
+                    HACK REACTOR
+                  </div>
+                  <div className="text-xs md:text-sm text-neutral-500 mt-1">
+                    Software Engineering Immersive
+                  </div>
+                  <div className="w-[200px] xl:w-[350px] min-w-50 h-[1.5px] bg-black opacity-20 my-4"></div>
+                </div>
+              </div>
+              <div className="flex gap-3">
+                <img
+                  src="/lse-logo.png"
+                  alt="LSE logo"
+                  className="w-9 h-9 object-contain"
+                />
+                <div>
+                  <div className="font-semibold text-black leading-tight text-sm md:text-md">
+                    THE LONDON SCHOOL OF ECONOMICS AND POLITICAL SCIENCE (LSE)
+                  </div>
+                  <div className="text-xs md:text-sm text-neutral-500 mt-1">
+                    Summer Study Abroad Program
+                  </div>
                 </div>
               </div>
             </div>
           </div>
 
-          <div className="md:col-span-7 animate-fade-up delay-200">
-            <h3 className="font-bold text-xl md:text-2xl text-blue-500 mb-2 md:mb-5 flex items-center">
-              About Me
-            </h3>
-            <div className="text-black">
-              <p className="leading-relaxed mb-2">
-                Hi there! I'm Christine, a passionate full stack software
-                engineer and proud UC Berkeley alum based in sunny Los Angeles,
-                California ☀️
-              </p>
-              <p className="leading-relaxed mb-2">
+          {/* Right Column */}
+          <div className="md:col-span-7 animate-fade-up delay-200 flex flex-col justify-center mt-5 md:mt-8">
+            <h2 className="text-2xl md:text-4xl text-black mb-3 md:mb-6 leading-tight">
+              A Entrepreneurial Full Stack Software Engineer
+            </h2>
+            <div className="text-black text-base md:text-lg space-y-2 md:space-y-4">
+              <p>
                 I've always been drawn to software design and development for
                 its incredible power to turn ideas into reality with elegance
                 and efficiency. What drives me most is the opportunity to learn,
-                build, and solve problems with others — working as a team toward
+                build, and solve problems with others. Working as a team toward
                 a shared vision is where I thrive.
               </p>
-              <p className="leading-relaxed mb-2">
+              <p>
                 I believe that only magic can surpass technology, and with that
                 mindset, I'm eager to use my skills and creativity to craft
                 solutions that fill real-world gaps and help make the world a
                 better, more connected place.
               </p>
-              <p className="leading-relaxed">
+              <p>
                 Feel free to reach out on social media or{' '}
                 <a
-                  className="text-primary"
+                  className="text-primary underline"
                   href="mailto:christine.t@atinistudio.com"
                 >
                   send me an email
@@ -60,99 +107,66 @@ const AboutSection = () => {
                 journeys to everyday life!
               </p>
             </div>
-
-            <div className="grid grid-cols-1 gap-6 mt-4 md:mt-6">
-              <div>
-                <h4 className="text-lg font-bold text-blue-500 mb-3">
-                  Education
-                </h4>
-                <div className="space-y-2">
-                  <div>
-                    <div className="text-black flex items-center gap-2">
-                      <img
-                        src="/berkeley-cal-logo.png"
-                        alt="UC Berkeley logo"
-                        className="w-6"
-                      />
-                      University of California, Berkeley
-                    </div>
-                    <div className="text-blue-300 text-sm ml-8">
-                      B.A. in Applied Mathematics and Economics (Double Major)
-                    </div>
-                  </div>
-                  <div>
-                    <div className="text-black flex items-center gap-2">
-                      <img
-                        src="/hack-reactor-logo.png"
-                        alt="Hack Reactor logo"
-                        className="w-6"
-                      />
-                      Hack Reactor
-                    </div>
-                    <div className="text-blue-300 text-sm ml-8">
-                      Software Engineering Immersive
-                    </div>
-                  </div>
-                  <div>
-                    <div className="text-black flex items-center gap-2">
-                      <img src="/lse-logo.png" alt="LSE logo" className="w-6" />
-                      The London School of Economics and Political Science (LSE)
-                    </div>
-                    <div className="text-blue-300 text-sm ml-8">
-                      Summer Study Abroad Program
-                    </div>
-                  </div>
+          </div>
+        </div>
+        {/* Experience Circles Row */}
+        <div className="w-full flex flex-col items-center mt-5 md:mt-14">
+          <div className="flex flex-col md:flex-row justify-center gap-2 md:gap-4 w-full max-w-5xl">
+            {/* Atini Studio */}
+            <div className="flex flex-col items-center mr-0 -mb-6 md:mb-0 md:-mr-8">
+              <div className="w-64 h-64 md:w-72 md:h-72 lg:w-80 lg:h-80 rounded-full border-2 border-yellow-100 border-opacity-50 flex flex-col items-center justify-center mb-3">
+                <div className="flex items-center justify-center h-20 mb-2 md:mb-6">
+                  <img
+                    src="https://atinistudio.com/assets/atini-logo-colored.svg"
+                    alt="Atini Studio Logo"
+                    className="w-14 md:w-16"
+                  />
                 </div>
+                <div className="text-xs md:text-sm text-neutral-500 w-[70%] mb-1 text-center">
+                  FOUNDER
+                </div>
+                <div className="font-semibold text-black text-md md:text-lg">
+                  ATINI STUDIO
+                </div>
+                <div className="text-xs text-neutral-400">2021 - PRESENT</div>
               </div>
-
-              <div>
-                <h4 className="text-lg font-bold text-blue-500 mb-3">
-                  Experience
-                </h4>
-                <ul className="space-y-2">
-                  <li className="flex flex-col md:flex-row items-start">
-                    <div className="text-primary font-medium">
-                      2021 - Present
-                    </div>
-                    <div className="ml-0 md:ml-4 text-black flex items-center">
-                      <span>Founder @</span>
-                      <a
-                        href="https://atinistudio.com"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="ml-1 hover:text-primary flex items-center"
-                      >
-                        Atini Studio
-                        <svg
-                          xmlns="http://www.w3.org/2000/svg"
-                          className="h-4 w-4 ml-1"
-                          fill="none"
-                          viewBox="0 0 24 24"
-                          stroke="currentColor"
-                        >
-                          <path
-                            strokeLinecap="round"
-                            strokeLinejoin="round"
-                            strokeWidth={2}
-                            d="M17 8l4 4m0 0l-4 4m4-4H3"
-                          />
-                        </svg>
-                      </a>
-                    </div>
-                  </li>
-                  <li className="flex flex-col md:flex-row items-start">
-                    <div className="text-primary font-medium">2020-2022</div>
-                    <div className="ml-0 md:ml-4 text-black">
-                      Software Engineer @ Camping World
-                    </div>
-                  </li>
-                  <li className="flex flex-col md:flex-row items-start">
-                    <div className="text-primary font-medium">2020</div>
-                    <div className="ml-0 md:ml-4 text-black">
-                      Software Engineering Teaching Assistant @ Hack Reactor
-                    </div>
-                  </li>
-                </ul>
+            </div>
+            {/* Camping World */}
+            <div className="flex flex-col items-center ml-0 mr-0 -mt-6 md:mt-0 -mb-6 md:mb-0 md:-ml-8 md:-mr-8">
+              <div className="w-64 h-64 md:w-72 md:h-72 lg:w-80 lg:h-80 rounded-full border-2 border-[#00669E] border-opacity-50 flex flex-col items-center justify-center mb-3">
+                <div className="flex items-center justify-center h-20 mb-2 md:mb-6">
+                  <img
+                    src="/camping-world-logo.png"
+                    alt="Camping World Logo"
+                    className="w-20"
+                  />
+                </div>
+                <div className="text-xs md:text-sm text-neutral-500 w-[70%] mb-1 text-center">
+                  LEAD SOFTWARE ENGINEER
+                </div>
+                <div className="font-semibold text-black text-md md:text-lg">
+                  CAMPING WORLD
+                </div>
+                <div className="text-xs text-neutral-400">2020 - 2022</div>
+              </div>
+            </div>
+            {/* Hack Reactor */}
+            <div className="flex flex-col items-center ml-0 -mt-6 md:mt-0 md:-ml-8">
+              <div className="w-64 h-64 md:w-72 md:h-72 lg:w-80 lg:h-80 rounded-full border-2 border-[#3F64DD] border-opacity-50 flex flex-col items-center justify-center mb-3">
+                <div className="flex items-center justify-center h-20 mb-2 md:mb-6">
+                  <img
+                    src="/hack-reactor-logo.png"
+                    alt="Hack Reactor Logo"
+                    className="w-16"
+                  />
+                </div>
+                <div className="text-xs md:text-sm text-neutral-500 text-center w-[70%] mb-1">
+                  SOFTWARE ENGINEERING TEACHING ASSISTANT
+                </div>
+                <div className="font-semibold text-black text-md md:text-lg">
+                  HACK REACTOR
+                </div>
+                <div className="text-xs text-neutral-400">2020</div>
               </div>
             </div>
           </div>

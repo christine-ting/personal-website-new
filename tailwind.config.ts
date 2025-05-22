@@ -142,7 +142,7 @@ export default {
 			},
 			fontFamily: {
 				sans: ['Roboto', 'sans-serif'],
-				display: ['Lora', 'serif']
+				display: ['Lora', 'serif'],
 			}
 		}
 	},
