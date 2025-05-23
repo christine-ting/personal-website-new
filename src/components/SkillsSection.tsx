@@ -5,75 +5,38 @@ const SkillsSection = () => {
     {
       category: 'Frontend',
       items: [
-        'React',
-        'Next.js',
-        'TypeScript',
-        'Tailwind CSS',
-        'HTML/CSS',
-        'JavaScript',
+        { name: 'React', icon: '/react.svg' },
+        { name: 'Next.js', icon: '/nextjs.svg' },
+        { name: 'TypeScript', icon: '/typescript.svg' },
+        { name: 'Tailwind CSS', icon: '/tailwind.svg' },
+        { name: 'HTML/CSS', icon: '/html.svg' },
+        { name: 'Angular', icon: '/angular.svg' },
       ],
-      icon: (
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          className="h-6 w-6 mr-3 text-primary"
-          viewBox="0 0 24 24"
-          fill="none"
-          stroke="currentColor"
-          strokeWidth="2"
-          strokeLinecap="round"
-          strokeLinejoin="round"
-        >
-          <rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect>
-          <line x1="8" y1="21" x2="16" y2="21"></line>
-          <line x1="12" y1="17" x2="12" y2="21"></line>
-        </svg>
-      ),
+      icon: '/frontend.svg',
     },
     {
       category: 'Backend',
       items: [
-        'Node.js',
-        'Express',
-        'NestJS',
-        'Python',
-        'RESTful APIs',
-        'GraphQL',
+        { name: 'Node.js', icon: '/nodejs.svg' },
+        { name: 'Express', icon: '/expressjs.svg' },
+        { name: 'NestJS', icon: '/nestjs.svg' },
+        { name: 'Python', icon: '/python.svg' },
+        { name: 'RESTful APIs', icon: '/restful.svg' },
+        { name: 'GraphQL', icon: '/graphql.svg' },
       ],
-      icon: (
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          className="h-6 w-6 mr-3 text-primary"
-          viewBox="0 0 24 24"
-          fill="none"
-          stroke="currentColor"
-          strokeWidth="2"
-          strokeLinecap="round"
-          strokeLinejoin="round"
-        >
-          <rect x="2" y="2" width="20" height="8" rx="2" ry="2"></rect>
-          <rect x="2" y="14" width="20" height="8" rx="2" ry="2"></rect>
-          <line x1="6" y1="6" x2="6.01" y2="6"></line>
-          <line x1="6" y1="18" x2="6.01" y2="18"></line>
-        </svg>
-      ),
+      icon: '/backend.svg',
     },
     {
       category: 'Tools & Others',
-      items: ['Git', 'AWS', 'GCP', 'CI/CD', 'Figma', 'Agile/Scrum'],
-      icon: (
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          className="h-6 w-6 mr-3 text-primary"
-          viewBox="0 0 24 24"
-          fill="none"
-          stroke="currentColor"
-          strokeWidth="2"
-          strokeLinecap="round"
-          strokeLinejoin="round"
-        >
-          <path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"></path>
-        </svg>
-      ),
+      items: [
+        { name: 'Git', icon: '/git.svg' },
+        { name: 'AWS', icon: '/aws.svg' },
+        { name: 'GCP', icon: '/gcp.svg' },
+        { name: 'CI/CD', icon: '/cicd.svg' },
+        { name: 'Figma', icon: '/figma.svg' },
+        { name: 'Agile/Scrum', icon: '/agile.svg' },
+      ],
+      icon: '/tools.svg',
     },
   ];
 
@@ -138,32 +101,35 @@ const SkillsSection = () => {
           {skills.map((skillGroup, index) => (
             <div
               key={skillGroup.category}
-              className="bg-gray-50 rounded-xl shadow-lg p-5 md:p-8 animate-fade-up"
+              className="bg-gray-50 rounded-xl shadow-lg p-6 lg:px-10 lg:py-8 animate-fade-up"
               style={{ animationDelay: `${index * 150}ms` }}
             >
-              <h3 className="text-xl font-bold text-blue-500 mb-3 md:mb-5 flex items-center">
-                {skillGroup.icon}
-                {skillGroup.category}
-              </h3>
-
+              <div className="flex justify-between items-center">
+                <div>
+                  <div className="text-yellow-500 text-sm">0{index + 1}</div>
+                  <h3 className="text-xl lg:text-2xl font-bold text-blue-500 flex items-center">
+                    {/* {skillGroup.icon} */}
+                    {skillGroup.category}
+                  </h3>
+                  <div className="w-10 h-[1.5px] bg-black mt-3 mb-6 opacity-30"></div>
+                </div>
+                <img
+                  src={skillGroup.icon}
+                  alt={skillGroup.category}
+                  className="w-12 h-12 ml-1 lg:ml-0 lg:w-16 lg:h-16"
+                />
+              </div>
               <ul className="space-y-2 md:space-y-4">
                 {skillGroup.items.map((skill) => (
-                  <li key={skill} className="flex items-center">
-                    <span className="text-primary mr-2">
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        className="h-5 w-5"
-                        viewBox="0 0 20 20"
-                        fill="currentColor"
-                      >
-                        <path
-                          fillRule="evenodd"
-                          d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
-                          clipRule="evenodd"
-                        />
-                      </svg>
+                  <li key={skill.name} className="flex items-center">
+                    <span className="text-primary mr-3">
+                      <img
+                        src={skill.icon}
+                        alt={skill.name}
+                        className="h-6 w-6"
+                      />
                     </span>
-                    <span className="text-black">{skill}</span>
+                    <span className="text-black">{skill.name}</span>
                   </li>
                 ))}
               </ul>

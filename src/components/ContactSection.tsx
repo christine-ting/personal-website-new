@@ -104,7 +104,7 @@ const ContactSection = () => {
                   <Input
                     id="name"
                     placeholder="Your name"
-                    className="border-gray-200 bg-white shadow-sm focus:border-blue-500 focus:ring-0 transition-colors"
+                    className="text-black border-gray-200 bg-white shadow-sm focus:border-blue-500 focus:ring-0 transition-colors"
                     required
                     value={formData.name}
                     onChange={handleChange}
@@ -121,7 +121,7 @@ const ContactSection = () => {
                     id="email"
                     type="email"
                     placeholder="Your email"
-                    className="border-gray-200 bg-white shadow-sm focus:border-blue-500 focus:ring-0 transition-colors"
+                    className="text-black border-gray-200 bg-white shadow-sm focus:border-blue-500 focus:ring-0 transition-colors"
                     required
                     value={formData.email}
                     onChange={handleChange}
@@ -137,7 +137,7 @@ const ContactSection = () => {
                   <Textarea
                     id="message"
                     placeholder="Your message"
-                    className="border-gray-200 bg-white shadow-sm focus:border-blue-500 focus:ring-0 transition-colors min-h-[150px]"
+                    className="text-black border-gray-200 bg-white shadow-sm focus:border-blue-500 focus:ring-0 transition-colors min-h-[150px]"
                     required
                     value={formData.message}
                     onChange={handleChange}

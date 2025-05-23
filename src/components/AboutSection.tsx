@@ -133,7 +133,7 @@ const AboutSection = () => {
             </div>
             {/* Camping World */}
             <div className="flex flex-col items-center ml-0 mr-0 -mt-6 md:mt-0 -mb-6 md:mb-0 md:-ml-8 md:-mr-8">
-              <div className="w-64 h-64 md:w-72 md:h-72 lg:w-80 lg:h-80 rounded-full border-2 border-[#00669E] border-opacity-50 flex flex-col items-center justify-center mb-3">
+              <div className="w-64 h-64 md:w-72 md:h-72 lg:w-80 lg:h-80 rounded-full border-2 border-[#D0D0D0] flex flex-col items-center justify-center mb-3">
                 <div className="flex items-center justify-center h-20 mb-2 md:mb-6">
                   <img
                     src="/camping-world-logo.png"
