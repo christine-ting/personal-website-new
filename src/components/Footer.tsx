@@ -9,7 +9,7 @@ const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           {/* Left column - Name and title */}
           <div className="flex gap-4">
-          <div className="relative w-20 h-20 rounded-full shadow-lg overflow-hidden">
+            <div className="relative w-20 h-20 rounded-full shadow-lg overflow-hidden">
               <img
                 className="rounded-full object-cover w-full h-full bg-[#5A9E95]"
                 src="https://firebasestorage.googleapis.com/v0/b/personal-website-313d4.appspot.com/o/profile%20(no%20background).png?alt=media&token=e3d10d1c-4652-403d-abbe-1f4f65d19550"
@@ -17,8 +17,10 @@ const Footer = () => {
               />
             </div>
             <div className="h-20 flex flex-col justify-center">
-            <h3 className="text-xl font-display font-bold">Christine Ting</h3>
-            <p className="mt-1 text-white">Entrepreneur & Full Stack Developer</p>
+              <h3 className="text-xl font-display font-bold">Christine Ting</h3>
+              <p className="mt-1 text-white">
+                Entrepreneur & Full Stack Developer
+              </p>
             </div>
           </div>
 
