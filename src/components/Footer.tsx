@@ -8,9 +8,18 @@ const Footer = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           {/* Left column - Name and title */}
-          <div>
-            <h3 className="text-2xl font-display font-bold">Christine Ting</h3>
-            <p className="mt-2 text-white">Full Stack Developer</p>
+          <div className="flex gap-4">
+          <div className="relative w-20 h-20 rounded-full shadow-lg overflow-hidden">
+              <img
+                className="rounded-full object-cover w-full h-full bg-[#5A9E95]"
+                src="https://firebasestorage.googleapis.com/v0/b/personal-website-313d4.appspot.com/o/profile%20(no%20background).png?alt=media&token=e3d10d1c-4652-403d-abbe-1f4f65d19550"
+                alt="Profile photo"
+              />
+            </div>
+            <div className="h-20 flex flex-col justify-center">
+            <h3 className="text-xl font-display font-bold">Christine Ting</h3>
+            <p className="mt-1 text-white">Entrepreneur & Full Stack Developer</p>
+            </div>
           </div>
 
           {/* Right column - Connect section */}
@@ -26,7 +35,7 @@ const Footer = () => {
                   xmlns="http://www.w3.org/2000/svg"
                   className="h-5 w-5 text-primary"
                   viewBox="0 0 20 20"
-                  fill="currentColor"
+                  fill="white"
                 >
                   <path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z" />
                   <path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z" />

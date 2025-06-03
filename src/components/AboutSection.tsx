@@ -19,8 +19,8 @@ const AboutSection = () => {
             {/* Profile Image */}
             <div className="relative w-36 h-36 rounded-full shadow-lg overflow-hidden mb-4">
               <img
-                className="rounded-full object-cover w-full h-full"
-                src="https://firebasestorage.googleapis.com/v0/b/personal-website-313d4.appspot.com/o/profile_photo.JPG?alt=media&token=e3d10d1c-4652-403d-abbe-1f4f65d19550"
+                className="rounded-full object-cover w-full h-full bg-[#5A9E95]"
+                src="https://firebasestorage.googleapis.com/v0/b/personal-website-313d4.appspot.com/o/profile%20(no%20background).png?alt=media&token=e3d10d1c-4652-403d-abbe-1f4f65d19550"
                 alt="Profile photo"
               />
             </div>
