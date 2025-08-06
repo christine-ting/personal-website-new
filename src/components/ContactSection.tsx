@@ -83,8 +83,13 @@ const ContactSection = () => {
             </svg>
           </h3>
           <p className="text-blue-300">
-            Have a project in mind or just want to say hello? Feel free to reach
-            out!
+            Have a project in mind? Fill out the below form or{' '}
+            <button
+              onClick={() => (window as any).Calendly.initPopupWidget({url: 'https://calendly.com/christine-t-atinistudio'})}
+              className="text-primary font-medium hover:underline"
+            >
+              <u>schedule a free consultation</u>
+            </button>!
           </p>
         </div>
         <div className="grid grid-cols-1 gap-12">
