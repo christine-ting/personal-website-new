@@ -12,7 +12,7 @@ const Footer = () => {
             <div className="relative w-20 h-20 rounded-full shadow-lg overflow-hidden">
               <img
                 className="rounded-full object-cover w-full h-full bg-[#5A9E95]"
-                src="https://firebasestorage.googleapis.com/v0/b/personal-website-313d4.appspot.com/o/profile%20(no%20background).png?alt=media&token=e3d10d1c-4652-403d-abbe-1f4f65d19550"
+                src="profile-photo.jpg"
                 alt="Profile photo"
               />
             </div>
