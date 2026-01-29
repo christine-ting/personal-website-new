@@ -20,7 +20,7 @@ const AboutSection = () => {
             <div className="relative w-36 h-36 rounded-full shadow-lg overflow-hidden mb-4">
               <img
                 className="rounded-full object-cover w-full h-full bg-[#5A9E95]"
-                src="https://firebasestorage.googleapis.com/v0/b/personal-website-313d4.appspot.com/o/profile%20(no%20background).png?alt=media&token=e3d10d1c-4652-403d-abbe-1f4f65d19550"
+                src="profile-photo.jpg"
                 alt="Profile photo"
               />
             </div>
@@ -79,7 +79,7 @@ const AboutSection = () => {
           {/* Right Column */}
           <div className="md:col-span-7 animate-fade-up delay-200 flex flex-col justify-center mt-5 md:mt-8">
             <h2 className="text-2xl md:text-4xl text-black mb-3 md:mb-6 leading-tight">
-              A Entrepreneurial Full Stack Software Engineer
+              An Entrepreneurial Full-Stack Software Engineer
             </h2>
             <div className="text-black text-base md:text-lg space-y-2 md:space-y-4">
               <p>

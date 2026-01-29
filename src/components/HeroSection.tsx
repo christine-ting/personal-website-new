@@ -38,7 +38,7 @@ const HeroSection = () => {
                 onClick={() =>
                   window.open('https://atinistudio.com/', '_blank')
                 }
-                src="https://firebasestorage.googleapis.com/v0/b/personal-website-313d4.appspot.com/o/atini_logo_light.svg?alt=media&token=40113ce4-dbf4-491e-bf2c-0d3bb37190d5"
+                src="atini_logo_light.svg"
               ></img>
             </div>
 
